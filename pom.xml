@@ -25,6 +25,7 @@
     </modules>
 
     <distributionManagement>
+<!-- Marcio    
         <repository>
             <id>utility</id>
             <name>utility-releases</name>
@@ -35,6 +36,7 @@
             <name>utility-snapshots</name>
             <url>http://repo.meteorite.bi/repository/alabs-snapshot-local/</url>
         </snapshotRepository>
+ Marcio -->
     </distributionManagement>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -54,14 +56,16 @@
         <jbehave.version>3.9.3</jbehave.version>
     </properties>
     <pluginRepositories>
+<!-- Marcio    
         <pluginRepository>
             <id>Analytical Labs Plugin Repo</id>
             <name>Analytical Labs Repo-releases</name>
             <url>http://repo.meteorite.bi/repository/alabs-release-local/</url>
         </pluginRepository>
+Marcio -->        
     </pluginRepositories>
-
     <repositories>
+<!-- Marcio
         <repository>
             <id>Analytical Labs Repo</id>
             <name>Analytical Labs Repo-releases</name>
@@ -84,10 +88,12 @@
             <id>pentaho-snapshot</id>
             <url>http://nexus.pentaho.org/content/repositories/public-snapshots/</url>
         </repository>
+Marcio -->        
         <!--<repository>
             <id>atlassian2</id>
             <url>http://repository.opencastproject.org/</url>
         </repository>-->
+<!--
         <repository>
             <id>central</id>
             <name>Maven Repository Switchboard</name>
@@ -116,12 +122,13 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-
+-->        
+<!-- Marcio
     	<repository>
     		<id>pentaho-releases</id>
     		<url>http://repository.pentaho.org/artifactory/repo/</url>
     	</repository>
-
+Marcio -->
         <repository>
             <id>miredot</id>
             <url>http://nexus.qmino.com/content/repositories/miredot/</url>
@@ -435,7 +442,8 @@
             <dependency>
                 <groupId>org.olap4j</groupId>
                 <artifactId>olap4j</artifactId>
-                <version>TRUNK-SNAPSHOT</version>
+                <version>1.2.0</version>
+<!-- Marcio                <version>TRUNK-SNAPSHOT</version> Marcio -->
             </dependency>
             <dependency>
                 <groupId>org.mongodb</groupId>
@@ -480,7 +488,8 @@
             <dependency>
                 <groupId>org.olap4j</groupId>
                 <artifactId>olap4j-xmla</artifactId>
-                <version>TRUNK-SNAPSHOT</version>
+                <version>1.2.0</version>
+<!-- MArcio                <version>TRUNK-SNAPSHOT</version> Marcio -->
             </dependency>
             <dependency>
                 <groupId>org.olap4j</groupId>
@@ -694,8 +703,10 @@
             </dependency>
             <dependency>
                 <groupId>pentaho</groupId>
-                <artifactId>mondrian</artifactId>
-                <version>4.3.0.1.1-SPARK</version>
+	                <artifactId>mondrian</artifactId>
+			<version>9.4.0.0-SNAPSHOT</version>
+   <!--  Marcio            <version>4.3.0.1.2-SPARK</version> Marcio -->
+
             </dependency>
             <!-- Spring modules -->
             <dependency>

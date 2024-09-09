@@ -42,6 +42,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
+<!-- Marcio                    
                     <execution>
                         <id>copy</id>
                         <phase>process-resources</phase>
@@ -58,8 +59,9 @@
                                     <outputDirectory>target/</outputDirectory>
                                 </artifactItem>
                             </artifactItems>
-                        </configuration>
+                        </configuration>                        
                     </execution>
+ Marcio -->                   
                 </executions>
             </plugin>
             <plugin>
@@ -153,6 +155,13 @@
         </plugins>
     </build>
     <dependencies>
+	<!-- MarcioADD -->
+	<dependency>
+  <groupId>javax.xml.bind</groupId>
+  <artifactId>jaxb-api</artifactId>
+  <version>2.3.0</version>
+</dependency>
+    
         <dependency>
             <groupId>bi.meteorite</groupId>
             <artifactId>licenseserver-core</artifactId>

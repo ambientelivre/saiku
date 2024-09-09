@@ -221,7 +221,9 @@ public class ExcelWorksheetBuilder {
     }
 
     private void addTotalsSummary(int startingRow) {
-        int rowIndex = startingRow + rowsetBody.length + 2; // Lines offset after data, in order to add summary
+        //int rowIndex = startingRow + rowsetBody.length + 2; // Lines offset after data, in order to add summary
+        // add Ambiente Livre Export Excel   
+        int rowIndex = startingRow + rowsetBody.length + rowScanTotals.size() + 2; // Lines offset after data, in order to add summary
         checkRowLimit(rowIndex);
 
         // Columns summary
