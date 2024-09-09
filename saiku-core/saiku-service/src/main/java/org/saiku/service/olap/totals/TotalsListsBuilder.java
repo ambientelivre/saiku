@@ -6,6 +6,7 @@ import org.saiku.olap.query2.ThinQuery;
 import org.saiku.olap.query2.util.Fat;
 import org.saiku.olap.util.SaikuProperties;
 import org.saiku.service.olap.totals.aggregators.TotalAggregator;
+import org.saiku.service.olap.totals.aggregators.BlankAggregator; // add Ambiente Livre Export Excel
 
 import org.apache.commons.lang.StringUtils;
 import org.olap4j.*;
@@ -41,6 +42,11 @@ public class TotalsListsBuilder implements FormatList {
 
   public TotalsListsBuilder(Measure[] selectedMeasures, TotalAggregator[] aggrTempl, CellSet cellSet,
                             AxisInfo totalsAxisInfo, AxisInfo dataAxisInfo, ThinQuery thinQuery) throws Exception {
+
+  // add Ambiente Livre Export Excel                      
+     for (int i = 0; i < aggrTempl.length - 1; i++)
+       if (aggrTempl[i] instanceof BlankAggregator) aggrTempl[i]= null;  
+                                   
     this.thinQuery = thinQuery;
 
     Cube cube;
