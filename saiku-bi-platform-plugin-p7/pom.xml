@@ -351,6 +351,7 @@
         </plugins>
     </build>
     <repositories>
+<!-- nor exist more    
         <repository>
             <id>Analytical Labs Repo</id>
             <name>Analytical Labs Repo-releases</name>
@@ -373,7 +374,7 @@
             <id>pentaho-snapshot</id>
             <url>http://nexus.pentaho.org/content/repositories/public-snapshots/</url>
         </repository>
-
+-->
         <repository>
             <id>central</id>
             <name>Maven Repository Switchboard</name>
@@ -436,7 +437,7 @@
                     <artifactId>janino</artifactId>
                 </exclusion>
             </exclusions>
-            <version>6.0.0.0-353</version>
+            <version>9.0.0.0-423</version>
         </dependency>
         <dependency>
             <groupId>pentaho</groupId>
@@ -460,7 +461,7 @@
                 </exclusion>
 
             </exclusions>
-            <version>6.0.0.0-353</version>
+            <version>9.0.0.0-423</version>
 
         </dependency>
         <dependency>
